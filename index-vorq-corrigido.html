@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050505">
+<title>VORQ Automotive</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050505;color:#fff;font-family:Arial,Helvetica,sans-serif}a{text-decoration:none;color:inherit}button{font:inherit}
+:root{--red:#e30613;--panel:#0b0b0b;--line:#242424;--muted:#9a9a9a}
+.top{background:var(--red);font-size:10px;font-weight:900;letter-spacing:.1em;text-align:center;padding:8px}
+header{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:rgba(5,5,5,.97);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.logo{font-size:30px;font-weight:1000;font-style:italic;letter-spacing:-.08em}.logo span{color:var(--red)}nav{display:flex;gap:24px}nav a{font-size:10px;font-weight:900;text-transform:uppercase}.cart{background:#111;border:1px solid #292929;color:#fff;border-radius:4px;padding:9px 12px}
+.hero{min-height:520px;position:relative;overflow:hidden;display:flex;align-items:center;padding:65px 6%;background:radial-gradient(circle at 72% 50%,rgba(227,6,19,.22),transparent 28%),linear-gradient(110deg,#020202 0%,#070707 60%,#160305 100%)}
+.hero-copy{max-width:610px;position:relative;z-index:2}.tag{color:#ff202b;font-size:11px;font-weight:900;letter-spacing:.2em;margin-bottom:12px}.hero h1{font-size:clamp(48px,7vw,88px);line-height:.84;margin:0;font-style:italic;letter-spacing:-.06em}.hero h1 span{color:var(--red)}.hero p{color:#bbb;max-width:520px;font-size:14px;line-height:1.7;margin:22px 0}
+.btn{display:inline-block;background:var(--red);padding:13px 20px;border-radius:4px;font-size:10px;font-weight:900}.watermark{position:absolute;right:4%;bottom:10%;font-size:clamp(70px,13vw,190px);font-weight:1000;font-style:italic;letter-spacing:-.1em;color:#fff;opacity:.035}
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line);background:#090909}.benefits div{padding:20px;text-align:center;border-right:1px solid var(--line)}.benefits strong{display:block;font-size:10px}.benefits small{color:#777;font-size:9px}
+section.catalog{width:min(1450px,94%);margin:auto;padding:58px 0}.section-head{text-align:center;margin-bottom:26px}.section-head .eyebrow{color:var(--red);font-size:10px;font-weight:900;letter-spacing:.2em}.section-head h2{font-size:32px;margin:7px 0 5px;font-style:italic}.section-head p{margin:0;color:#888;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.card{background:var(--panel);border:1px solid var(--line);border-radius:7px;overflow:hidden;transition:.2s;position:relative}.card:hover{transform:translateY(-3px);border-color:#4a161a}.card.featured{border-color:var(--red);box-shadow:0 0 22px rgba(227,6,19,.13)}.ribbon{position:absolute;right:8px;top:8px;z-index:3;background:var(--red);font-size:8px;font-weight:900;padding:6px 8px;border-radius:3px}
+.photo{height:285px;background:radial-gradient(circle,#181818,#070707 65%);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.photo img{width:100%;height:100%;object-fit:cover}.photo:after{content:"";position:absolute;inset:auto 0 0;height:28%;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+.card-body{padding:16px}.kit{color:var(--red);font-size:9px;font-weight:900;letter-spacing:.14em}.card h3{font-size:20px;margin:5px 0 8px;font-style:italic}.desc{font-size:10px;color:#8d8d8d;line-height:1.5;min-height:46px}.buyrow{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:14px}.price{font-size:19px;font-weight:900}.buy{background:var(--red);border:0;color:#fff;border-radius:4px;padding:10px 11px;font-size:8px;font-weight:900}
+.racing{background:linear-gradient(120deg,#070707,#110203);border-block:1px solid var(--line);padding:75px 6%;display:flex;justify-content:space-between;align-items:center;gap:40px}.racing h2{font-size:clamp(40px,6vw,78px);line-height:.88;margin:0;font-style:italic;letter-spacing:-.05em}.racing h2 span{color:var(--red)}.racing p{max-width:560px;color:#8b8b8b;line-height:1.7}.mark{font-size:75px;font-weight:1000;font-style:italic;letter-spacing:-.09em}.mark span{color:var(--red)}
+footer{padding:28px 6%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#666;font-size:9px;border-top:1px solid var(--line);background:#020202}
+@media(max-width:900px){nav{display:none}.grid{grid-template-columns:1fr 1fr}.benefits{grid-template-columns:1fr 1fr}.racing{display:block}.mark{margin-top:35px}}
+@media(max-width:560px){header{height:62px}.logo{font-size:25px}.hero{min-height:500px;padding:55px 6%}.hero h1{font-size:54px}.grid{grid-template-columns:1fr}.photo{height:330px}.benefits{grid-template-columns:1fr 1fr}.benefits div{padding:15px 8px}.racing{padding:55px 6%}}
+</style>
+</head>
+<body>
+<div class="top">VORQ AUTOMOTIVE • ATÉ 3X SEM JUROS NO CARTÃO</div>
+<header>
+  <div class="logo">VOR<span>Q</span></div>
+  <nav><a href="#inicio">Início</a><a href="#kits">Kits</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+  <button class="cart" onclick="abrirCarrinho()">🛒 <span id="count">0</span></button>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-copy"><div class="tag">VORQ AUTOMOTIVE</div><h1>MOVIDO POR<br><span>DESEMPENHO.</span></h1><p>Streetwear e acessórios com inspiração racing para quem vive a paixão automotiva dentro e fora das ruas.</p><a class="btn" href="#kits">VER COLEÇÃO →</a></div>
+  <div class="watermark">VORQ</div>
+</section>
+<section class="benefits">
+  <div><strong>🏁 DNA RACING</strong><small>Estilo inspirado nas pistas</small></div><div><strong>🔥 EDIÇÕES ESPECIAIS</strong><small>Produtos exclusivos</small></div><div><strong>🎁 BRINDES</strong><small>Surpresas em pedidos</small></div><div><strong>💳 3X SEM JUROS</strong><small>No cartão</small></div>
+</section>
+<section class="catalog" id="kits">
+<div class="section-head"><div class="eyebrow">COLEÇÃO VORQ</div><h2>KITS QUE CARREGAM ATITUDE.</h2><p>Escolha seu kit e leve a identidade VORQ para o seu dia a dia.</p></div>
+<div class="grid">
+<article class="card"><div class="photo"><img src="assets/kit-01.png" alt="Kit 01 Apex Street"></div><div class="card-body"><div class="kit">KIT 01</div><h3>APEX STREET</h3><div class="desc">Camiseta oversized + calça cargo + boné + meias + adesivo.</div><div class="buyrow"><div class="price">R$ 249,90</div><button class="buy" onclick="add('APEX STREET',249.90)">COMPRAR</button></div></div></article>
+<article class="card"><div class="photo"><img src="assets/kit-02.png" alt="Kit 02 Racing"></div><div class="card-body"><div class="kit">KIT 02</div><h3>RACING</h3><div class="desc">Camiseta racing + jaqueta corta-vento + calça esportiva + boné + luvas.</div><div class="buyrow"><div class="price">R$ 399,90</div><button class="buy" onclick="add('RACING',399.90)">COMPRAR</button></div></div></article>
+<article class="card featured"><div class="ribbon">EDIÇÃO LIMITADA</div><div class="photo"><img src="assets/kit-03.png" alt="Kit 03 Apex Limited"></div><div class="card-body"><div class="kit">KIT 03</div><h3>APEX LIMITED</h3><div class="desc">Jaqueta premium + camiseta oversized + calça + boné + bolsa transversal + chaveiro numerado.</div><div class="buyrow"><div class="price">R$ 449,90</div><button class="buy" onclick="add('APEX LIMITED',449.90)">COMPRAR</button></div></div></article>
+<article class="card"><div class="photo"><img src="assets/kit-04.png" alt="Kit 04 Racing Red"></div><div class="card-body"><div class="kit">KIT 04</div><h3>RACING RED</h3><div class="desc">Kit esportivo vermelho e preto com visual inspirado no automobilismo.</div><div class="buyrow"><div class="price">R$ 549,90</div><button class="buy" onclick="add('RACING RED',549.90)">COMPRAR</button></div></div></article>
+</div></section>
+<section class="racing" id="sobre"><div><div class="tag">RACING CULTURE</div><h2>FEITO PARA QUEM<br><span>AMA CARROS.</span></h2><p>A VORQ combina cultura automotiva, streetwear e identidade racing em uma experiência visual forte, escura e premium.</p></div><div class="mark">VOR<span>Q</span></div></section>
+</main>
+<footer id="contato"><span>VORQ AUTOMOTIVE</span><span>Instagram: @VORQAutomotive</span><span>© 2026 VORQ Automotive</span></footer>
+<script>
+const cart=[];function add(n,p){cart.push({n,p});document.getElementById('count').textContent=cart.length;alert(n+' adicionado ao carrinho.');}
+function abrirCarrinho(){if(!cart.length){alert('Seu carrinho está vazio.');return}const t=cart.reduce((s,i)=>s+i.p,0);alert(cart.map(i=>'• '+i.n+' — R$ '+i.p.toFixed(2).replace('.',',')).join('\n')+'\n\nTotal: R$ '+t.toFixed(2).replace('.',','));}
+</script>
+</body>
+</html>
